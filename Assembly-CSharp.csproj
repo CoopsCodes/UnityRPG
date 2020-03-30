@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ExitArea.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <None Include="Assets\Udemy RPG Assets\Licence.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/coopscoder/Projects/First 2D RPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
