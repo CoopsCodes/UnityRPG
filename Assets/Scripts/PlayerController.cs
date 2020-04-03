@@ -9,9 +9,13 @@ public class PlayerController : MonoBehaviour
 
     public Animator myAnimator;
 
+    public static PlayerController instance;
+
     // Start is called before the first frame update
     void Start() {
-        
+        instance = this;
+        // indicates that the gameObject(being the "Player"), gameObject relates to whatever the script relates to.
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
