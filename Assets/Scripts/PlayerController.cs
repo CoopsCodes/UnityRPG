@@ -13,7 +13,17 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        instance = this;
+
+        // calling instance checks if there is a duplicate character when the secene changes, if so it destroys it.
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
         // indicates that the gameObject(being the "Player"), gameObject relates to whatever the script relates to.
         DontDestroyOnLoad(gameObject);
     }
