@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     public string areaTransitionName;
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
 
     // Start is called before the first frame update
     void Start() {
@@ -40,6 +42,16 @@ public class PlayerController : MonoBehaviour
         {
             myAnimator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnimator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
-        } 
+        }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+    }
+
+    // getter/setter to share the private vectors with the camera controller
+    public void SetBounds(Vector3 botLeft, Vector3 topRight)
+    {
+        // limiting the player to the bounds of the map, the new vector adds a space between the edge or the player would be half off frame
+        bottomLeftLimit = botLeft + new Vector3(1f, 1f, 0f);
+        topRightLimit = topRight + new Vector3(-1f, -1f, 0f);
     }
 }
