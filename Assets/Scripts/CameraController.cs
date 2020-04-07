@@ -21,9 +21,12 @@ public class CameraController : MonoBehaviour
         // this is setting target to whatever the instance of player controller is set to, having it in Start is so it finds the player whenever a new scene is called.
         target = PlayerController.instance.transform;
 
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
+
         // assigning the map bounds to the min and max paramaters.
-        bottomLeftLimit = theMap.localBounds.min;
-        topRightLimit = theMap.localBounds.max;
+        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
+        topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
     }
 
     // LateUpdate is called once per frame after update
