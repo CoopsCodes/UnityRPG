@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     public void SetBounds(Vector3 botLeft, Vector3 topRight)
     {
         // limiting the player to the bounds of the map, the new vector adds a space between the edge or the player would be half off frame
-        bottomLeftLimit = botLeft + new Vector3(1f, 1f, 0f);
-        topRightLimit = topRight + new Vector3(-1f, -1f, 0f);
+        bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
+        topRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
     }
 }
