@@ -20476,6 +20476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials Loader
       objectReference: {fileID: 0}
+    - target: {fileID: 898641902260554210, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 898641902260554212, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20535,7 +20540,7 @@ PrefabInstance:
         type: 3}
       propertyPath: UIScreen
       value: 
-      objectReference: {fileID: 3088072987057404900, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+      objectReference: {fileID: 3433779125266999070, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
         type: 3}
     - target: {fileID: 898641902260554211, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
         type: 3}
