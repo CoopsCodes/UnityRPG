@@ -19,7 +19,8 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         // this is setting target to whatever the instance of player controller is set to, having it in Start is so it finds the player whenever a new scene is called.
-        target = PlayerController.instance.transform;
+        //target = PlayerController.instance.transform;
+        target = FindObjectOfType<PlayerController>().transform;
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;

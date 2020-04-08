@@ -12,6 +12,9 @@ public class AreaExit : MonoBehaviour
 
     public AreaEntrance theEntrance;
 
+    public float waitToLoad = 1f;
+    private bool shouldLoadAfterFade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +24,24 @@ public class AreaExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(shouldLoadAfterFade)
+        {
+            waitToLoad -= Time.deltaTime;
+            if(waitToLoad <= 0)
+            {
+                shouldLoadAfterFade = false;
+                SceneManager.LoadScene(areaToLoad);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(areaToLoad);
+            
+            shouldLoadAfterFade = true;
+            UIFade.instance.FadeToBlack();
 
             // script to set the trigger points to be the area that a player loads in at.
             PlayerController.instance.areaTransitionName = areaTransitionName;

@@ -25,7 +25,10 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            if(instance != this)
+            {
+                Destroy(gameObject);
+            }
         }
         
         // indicates that the gameObject(being the "Player"), gameObject relates to whatever the script relates to.
