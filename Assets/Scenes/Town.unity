@@ -4054,7 +4054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mah Name iz
+  m_Text: Gretchen
 --- !u!222 &816440661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20843,7 +20843,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Testing Text
+  m_Text: 
 --- !u!222 &2059965595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20977,6 +20977,35 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2132694653}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2132694655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3433779125266999070, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 2132694653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132694656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132694655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5579c8527a344dfafb92982a3b5398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 2059965594}
+  nameText: {fileID: 816440660}
+  dialogueBox: {fileID: 1441810166}
+  nameBox: {fileID: 554429053}
+  dialogueLines:
+  - YOU
+  - CANT
+  - SIT
+  - WITH
+  - US!!!
+  currentLine: 0
 --- !u!1001 &898641903559939368
 PrefabInstance:
   m_ObjectHideFlags: 0
