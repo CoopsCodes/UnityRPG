@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
 
-    // Start is called before the first frame update
-    void Start() {
+    public bool canMove = true;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        canMove = true;
         // calling instance checks if there is a duplicate character when the secene changes, if so it destroys it.
         if (instance == null)
         {
@@ -36,15 +39,28 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() {
-        theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+    void Update()
+    {
+        if(canMove)
+        {
+            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+        }
+        else
+        {
+            theRB.velocity = Vector2.zero;
+        }
+
         myAnimator.SetFloat("moveX", theRB.velocity.x);
         myAnimator.SetFloat("moveY", theRB.velocity.y);
 
-        if(Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
-            myAnimator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            myAnimator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            if(canMove)
+            {
+                myAnimator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                myAnimator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
+            
         }
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);

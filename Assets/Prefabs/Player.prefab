@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 1811190088391709571}
-  moveSpeed: 5
+  moveSpeed: 10
   myAnimator: {fileID: 1811190088391709572}
   areaTransitionName: 
 --- !u!95 &1811190088391709572

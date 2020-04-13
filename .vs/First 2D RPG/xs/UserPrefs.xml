@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{E373E13E-129F-36C0-BA84-579EA90F7179}|">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Scripts/EssentialsLoader.cs" Line="31" Column="1" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="23" Column="65" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="30" Column="37" />
-      <File FileName="Assets/Scripts/DialogManager.cs" Line="39" Column="21" />
-      <File FileName="Assets/Scripts/DialogueActivator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DialogManager.cs" Line="73" Column="35" />
+      <File FileName="Assets/Scripts/DialogueActivator.cs" Line="24" Column="66" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="18" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
