@@ -5,7 +5,8 @@
       <File FileName="Assets/Scripts/DialogueActivator.cs" Line="24" Column="66" />
       <File FileName="Assets/Scripts/PlayerController.cs" Line="18" Column="31" />
       <File FileName="Assets/Scripts/CharStats.cs" Line="77" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="9" Column="36" />
+      <File FileName="Assets/Scripts/EssentialsLoader.cs" Line="27" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +14,7 @@
           <Node name="First 2D RPG" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameManager.cs" selected="True" />
+                <Node name="EssentialsLoader.cs" selected="True" />
               </Node>
             </Node>
           </Node>
