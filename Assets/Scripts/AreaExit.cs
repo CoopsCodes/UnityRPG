@@ -41,6 +41,8 @@ public class AreaExit : MonoBehaviour
         {
             
             shouldLoadAfterFade = true;
+            GameManager.instance.fadingBetweenAreas = true;
+
             UIFade.instance.FadeToBlack();
 
             // script to set the trigger points to be the area that a player loads in at.

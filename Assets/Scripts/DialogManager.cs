@@ -40,7 +40,8 @@ public class DialogManager : MonoBehaviour
                     if(currentLine >= dialogueLines.Length)
                     {
                         dialogueBox.SetActive(false);
-                        PlayerController.instance.canMove = true;
+
+                        GameManager.instance.dialogueActive = false;
                     }
                     else
                     {
@@ -72,7 +73,7 @@ public class DialogManager : MonoBehaviour
 
         nameBox.SetActive(isPerson);
 
-        PlayerController.instance.canMove = false;
+        GameManager.instance.dialogueActive = true;
     }
 
     public void CheckIfName()
