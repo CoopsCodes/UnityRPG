@@ -32,7 +32,6 @@ public class CharStats : MonoBehaviour
 
         for(int i = 2; i < EXPToNextLevel.Length; i++)
         {
-            Debug.Log(i);
             EXPToNextLevel[i] = Mathf.FloorToInt(EXPToNextLevel[i - 1] * 1.05f);
         }
     }

@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
-    public GameObject theMenu;
+    public GameObject theMenu; // the whole menu windows
+    public GameObject[] windows; // the menu windows inside the menu
 
     private CharStats[] playerStats;
 
@@ -62,6 +63,21 @@ public class GameMenu : MonoBehaviour
             else
             {
                 charStatHolder[i].SetActive(false);
+            }
+        }
+    }
+
+    public void ToggleWindow(int windowNumber)
+    {
+        for(int i = 0; i < windows.Length; i++)
+        {
+            if(i == windowNumber)
+            {
+                windows[i].SetActive(!windows[i].activeInHierarchy);
+            }
+            else
+            {
+                windows[i].SetActive(false);
             }
         }
     }
