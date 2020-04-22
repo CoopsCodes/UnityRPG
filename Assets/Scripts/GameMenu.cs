@@ -15,6 +15,11 @@ public class GameMenu : MonoBehaviour
     public Image[] charImage;
     public GameObject[] charStatHolder;
 
+    public GameObject[] statusButtons; // the player button inside the status menu
+
+    public Text statusName, statusHP, statusMP, statusStr, statusDef, statusWpsEq, statusWpsPwr, statusArmEq, statusArmPwr, statusEXP;
+    public Image statusImage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +33,10 @@ public class GameMenu : MonoBehaviour
         {
             if(theMenu.activeInHierarchy)
             {
-                theMenu.SetActive(false);
-                GameManager.instance.gameMenuOpen = false;
+                //theMenu.SetActive(false);
+                //GameManager.instance.gameMenuOpen = false;
+
+                CloseMenu();
             }
             else
             {
@@ -69,6 +76,8 @@ public class GameMenu : MonoBehaviour
 
     public void ToggleWindow(int windowNumber)
     {
+        UpdateMainStats();
+
         for(int i = 0; i < windows.Length; i++)
         {
             if(i == windowNumber)
@@ -80,5 +89,56 @@ public class GameMenu : MonoBehaviour
                 windows[i].SetActive(false);
             }
         }
+    }
+
+    public void CloseMenu()
+    {
+        for(int i = 0; i < windows.Length; i++)
+        {
+            windows[i].SetActive(false);
+        }
+
+        theMenu.SetActive(false);
+        GameManager.instance.gameMenuOpen = false;
+    }
+
+    public void OpenStatus()
+    {
+        UpdateMainStats();
+
+        CharStatus(0);
+
+        for(int i = 0; i < statusButtons.Length; i++)
+        {
+            statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
+            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
+        }
+    }
+
+    public void CharStatus(int selected)
+    {
+        statusName.text = playerStats[selected].charName;
+        statusHP.text = "" + playerStats[selected].currentHP + "/" + playerStats[selected].maxHP;
+        statusMP.text = "" + playerStats[selected].currentMP + "/" + playerStats[selected].maxMP;
+        statusStr.text = playerStats[selected].strength.ToString();
+        statusDef.text = playerStats[selected].defence.ToString();
+
+        if(playerStats[selected].equippedWeapon != "")
+        {
+            statusWpsEq.text = playerStats[selected].equippedWeapon.ToString();
+        }
+
+        statusWpsPwr.text = playerStats[selected].weaponPWR.ToString();
+
+        if(playerStats[selected].equippedWeapon != "")
+        {
+            statusArmEq.text = playerStats[selected].equippedWeapon.ToString();
+        }
+        
+        statusArmPwr.text = playerStats[selected].armourPWR.ToString();
+
+        statusEXP.text = (playerStats[selected].EXPToNextLevel[playerStats[selected].playerLevel] - playerStats[selected].currentEXP).ToString();
+
+        statusImage.sprite = playerStats[selected].charImage;
     }
 }
