@@ -47,4 +47,32 @@ public class GameManager : MonoBehaviour
 
         return null;
     }
+
+    public void SortItems()
+    {
+        // using a while loop to increment and loop thorugh the inventory and move all the items into an empty space
+        bool itemAfter = true;
+
+        while(itemAfter == true)
+        {
+            itemAfter = false;
+
+            for(int i = 0; i < itemsHeld.Length - 1; i++)
+            {
+                if(itemsHeld[i] == "")
+                {
+                    itemsHeld[i] = itemsHeld[i + 1];
+                    itemsHeld[i + 1] = "";
+
+                    noOfItems[i] = noOfItems[i + 1];
+                    noOfItems[i + 1] = 0;
+
+                    if(itemsHeld[i] != "")
+                    {
+                        itemAfter = true;
+                    }
+                }
+            }
+        }
+    }
 }
