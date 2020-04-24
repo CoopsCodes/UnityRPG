@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{E373E13E-129F-36C0-BA84-579EA90F7179}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Item.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/DialogManager.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/DialogueActivator.cs" />
-      <File FileName="Assets/Scripts/PlayerController.cs" />
-      <File FileName="Assets/Scripts/CharStats.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
-      <File FileName="Assets/Scripts/EssentialsLoader.cs" />
-      <File FileName="Assets/Scripts/GameMenu.cs" />
-      <File FileName="Assets/Scripts/Item.cs" Line="21" Column="31" />
+      <File FileName="Assets/Scripts/EssentialsLoader.cs" Line="23" Column="10" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="109" Column="23" />
+      <File FileName="Assets/Scripts/Item.cs" Line="22" Column="35" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="30" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
