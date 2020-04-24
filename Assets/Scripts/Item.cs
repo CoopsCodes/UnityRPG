@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // defining the types of items
+    [Header("Item Type")] // defining the types of items
     public bool isItem;
     public bool isWeapon;
     public bool isArmour;
 
+    [Header("Item Details")]
     public string itemName;
     public string itemDescription;
     public int itemValue;
     public Sprite itemSprite;
 
+    [Header("Item Details")]
     public int amountToChange; // the value of what the item impacts, ie health increase, weapon boost etc
     public bool affectHP, affectMP, affectSRT;
 
+    [Header("Weapon/Armour Details")]
     public int weaponStrength;
     public int armourStrength;
 
