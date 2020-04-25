@@ -33,6 +33,13 @@ public class GameManager : MonoBehaviour
         {
             PlayerController.instance.canMove = true;
         }
+
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            AddItem("Mana Potion");
+
+            RemoveItem("Silver Armour");
+        }
     }
 
     public Item GetItemDetails(string itemToGrab)
@@ -73,6 +80,83 @@ public class GameManager : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    public void AddItem(string itemToAdd)
+    {
+        int newItemPosition = 0;
+        bool foundSpace = false;
+
+        for(int i = 0; i < itemsHeld.Length; i++)
+        {
+            if(itemsHeld[i] == "" || itemsHeld[i] == itemToAdd)
+            {
+                newItemPosition = i;
+                i = itemsHeld.Length; // this line is used to break the for loop, as were setting the condition to the end (only use if there can be only one item in a slot?)
+                foundSpace = true;
+
+
+            }
+        }
+        if(foundSpace)
+        {
+            bool itemExists = false;
+            for(int i = 0; i < referenceItems.Length; i++)
+            {
+                if(referenceItems[i].itemName == itemToAdd)
+                {
+                    itemExists = true;
+
+                    i = referenceItems.Length; // break out of the loop
+                }
+            }
+
+            if(itemExists)
+            {
+                itemsHeld[newItemPosition] = itemToAdd;
+                noOfItems[newItemPosition]++; 
+            }
+            else
+            {
+                Debug.LogError( "Cannot add " + itemToAdd);
+            }
+
+        }
+
+        GameMenu.instance.ShowItems();
+    }
+
+    public void RemoveItem(string itemToRemove)
+    {
+        int itemPosition = 0;
+        bool foundItem = false;
+
+        for(int i = 0; i < itemsHeld.Length; i++)
+        {
+            if(itemsHeld[i] == itemToRemove)
+            {
+                foundItem = true;
+                itemPosition = i;
+
+                i = itemsHeld.Length; // breaks out of loop
+            }
+        }
+
+        if(foundItem)
+        {
+            noOfItems[itemPosition]--;
+
+            if(noOfItems[itemPosition] <= 0)
+            {
+                itemsHeld[itemPosition] = "";
+            }
+
+            GameMenu.instance.ShowItems();
+        }
+        else
+        {
+            Debug.LogError("Cannot remove " + itemToRemove);
         }
     }
 }
