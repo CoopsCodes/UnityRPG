@@ -144,9 +144,9 @@ public class GameMenu : MonoBehaviour
 
         statusWpsPwr.text = playerStats[selected].weaponPWR.ToString();
 
-        if(playerStats[selected].equippedWeapon != "")
+        if (playerStats[selected].equippedArmour != "")
         {
-            statusArmEq.text = playerStats[selected].equippedWeapon.ToString();
+            statusArmEq.text = playerStats[selected].equippedArmour.ToString();
         }
         
         statusArmPwr.text = playerStats[selected].armourPWR.ToString();
@@ -220,5 +220,11 @@ public class GameMenu : MonoBehaviour
     public void CloseCharItemChoice()
     {
         itemCharChoiceMenu.SetActive(false);
+    }
+
+    public void UseItem(int selectChar)
+    {
+        activeItem.Use(selectChar);
+        CloseCharItemChoice();
     }
 }
