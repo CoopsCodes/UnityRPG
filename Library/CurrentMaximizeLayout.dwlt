@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 750
-  m_MinSize: {x: 953, y: 448}
-  m_MaxSize: {x: 22012, y: 10024}
+  m_MinSize: {x: 955, y: 448}
+  m_MaxSize: {x: 22010, y: 10024}
   vertical: 0
-  controlID: 65152
+  controlID: 66104
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 65153
+  controlID: 65978
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,8 +151,8 @@ MonoBehaviour:
     y: 0
     width: 525
     height: 423
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -65718
+  m_LastSelectedObjectID: -187122
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,10 +413,10 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 750
-  m_MinSize: {x: 240, y: 424}
+  m_MinSize: {x: 244, y: 424}
   m_MaxSize: {x: 4004, y: 8024}
   vertical: 1
-  controlID: 65079
+  controlID: 66105
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,8 +436,8 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 404
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -517,8 +517,8 @@ MonoBehaviour:
     y: 404
     width: 244
     height: 346
-  m_MinSize: {x: 240, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 244, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -574,8 +574,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 750
-  m_MinSize: {x: 234, y: 274}
-  m_MaxSize: {x: 10004, y: 10024}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -619,19 +619,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Items
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Prefabs/Items
+  - Assets/Scripts
   m_LastFoldersGridSize: 55
   m_LastProjectPath: /Users/coopscoder/Projects/First 2D RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 86040200
-    m_LastClickedID: 132230
+    m_SelectedIDs: 02240000
+    m_LastClickedID: 9218
     m_ExpandedIDs: 000000007a090000e00b00002821000010230000d823000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a090000e00b000010230000d823000000ca9a3b
+    m_ExpandedIDs: 000000007a090000e00b00002821000010230000d823000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,9 +685,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 0e25fdff
-    m_LastClickedInstanceID: -187122
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 1a090500
+    m_LastClickedInstanceID: 330010
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 9828000048e1fffff01f0000f42100001a2300009c090000ac1d0000c21d00000a2000000e22000000000000ce1a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -712,7 +712,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 588}
     m_GridSize: 55
   m_DirectoriesAreaWidth: 110
 --- !u!114 &16
@@ -734,8 +734,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 750
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
