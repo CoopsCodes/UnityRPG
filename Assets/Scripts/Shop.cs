@@ -87,7 +87,7 @@ public class Shop : MonoBehaviour
 
         GameManager.instance.SortItems();
 
-        sellItemButtons[0].Press();
+        sellItemButtons[0].Press(); // this is grabbing the first item in the list so it doesnt show an empty title
 
         ShowSellItems();
     }
