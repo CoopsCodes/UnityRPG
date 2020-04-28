@@ -5006,7 +5006,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 391234751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 17161165}
+        m_MethodName: SellItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &393344638
@@ -20964,7 +20975,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533089726}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 17161165}
+        m_MethodName: BuyItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1542977172
@@ -49440,30 +49462,6 @@ MonoBehaviour:
   sellMenu: {fileID: 956310098}
   goldText: {fileID: 1382974394}
   itemsForSale:
-  - Health Potion
-  - 
-  - 
-  - 
-  - 
-  - Mana Potion
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Leather Armour
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Silver Armour
-  - 
-  - 
-  - 
-  - 
-  - Wooden Sword
   - 
   - 
   - 
@@ -49471,7 +49469,31 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Silver Sword
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -49562,6 +49584,13 @@ MonoBehaviour:
   - {fileID: 1196591271}
   - {fileID: 1180094185}
   - {fileID: 212277020}
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 1682828666}
+  buyItemDescription: {fileID: 251102289}
+  buyItemValue: {fileID: 226558015}
+  sellItemName: {fileID: 2130551384}
+  sellItemDescription: {fileID: 160540258}
+  sellItemValue: {fileID: 733555199}
 --- !u!1 &6659252686922055926
 GameObject:
   m_ObjectHideFlags: 0
