@@ -19,6 +19,10 @@ public class Shop : MonoBehaviour
     public ItemButton[] buyItemButtons;
     public ItemButton[] sellItemButtons;
 
+    public Item selectedItem;
+    public Text buyItemName, buyItemDescription, buyItemValue;
+    public Text sellItemName, sellItemDescription, sellItemValue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,5 +103,24 @@ public class Shop : MonoBehaviour
                 sellItemButtons[i].amountText.text = "";
             }
         }
+    }
+
+    public void SelectBuyItem(Item buyItem)
+    {
+        selectedItem = buyItem;
+
+        buyItemName.text = selectedItem.itemName;
+        buyItemDescription.text = selectedItem.itemDescription;
+        buyItemValue.text = "Value: " + selectedItem.itemValue;
+
+    }
+
+    public void SelectSellItem(Item sellItem)
+    {
+        selectedItem = sellItem;
+
+        sellItemName.text = selectedItem.itemName;
+        sellItemDescription.text = selectedItem.itemDescription;
+        sellItemValue.text = "Value: " + selectedItem.itemValue;
     }
 }
