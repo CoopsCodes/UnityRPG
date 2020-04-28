@@ -60,7 +60,7 @@ public class Shop : MonoBehaviour
         buyMenu.SetActive(true);
         sellMenu.SetActive(false);
 
-        //GameManager.instance.SortItems();
+        buyItemButtons[0].Press();
 
         for (int i = 0; i < buyItemButtons.Length; i++)
         {
@@ -87,6 +87,8 @@ public class Shop : MonoBehaviour
 
         GameManager.instance.SortItems();
 
+        sellItemButtons[0].Press();
+
         for (int i = 0; i < sellItemButtons.Length; i++)
         {
             sellItemButtons[i].buttonValue = i;
@@ -111,7 +113,7 @@ public class Shop : MonoBehaviour
 
         buyItemName.text = selectedItem.itemName;
         buyItemDescription.text = selectedItem.itemDescription;
-        buyItemValue.text = "Value: " + selectedItem.itemValue;
+        buyItemValue.text = "Value: " + selectedItem.itemValue + "g";
 
     }
 
@@ -121,6 +123,6 @@ public class Shop : MonoBehaviour
 
         sellItemName.text = selectedItem.itemName;
         sellItemDescription.text = selectedItem.itemDescription;
-        sellItemValue.text = "Value: " + selectedItem.itemValue;
+        sellItemValue.text = "Value: " + Mathf.FloorToInt(selectedItem.itemValue * 0.5f).ToString() + "g";
     }
 }
