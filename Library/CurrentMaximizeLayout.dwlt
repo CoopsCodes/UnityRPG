@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 750
-  m_MinSize: {x: 953, y: 424}
-  m_MaxSize: {x: 22012, y: 10024}
+  m_MinSize: {x: 955, y: 448}
+  m_MaxSize: {x: 22010, y: 10024}
   vertical: 0
-  controlID: 87931
+  controlID: 90820
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,10 +128,10 @@ MonoBehaviour:
     y: 0
     width: 525
     height: 750
-  m_MinSize: {x: 202, y: 424}
-  m_MaxSize: {x: 4002, y: 8024}
+  m_MinSize: {x: 202, y: 448}
+  m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 87911
+  controlID: 90800
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,8 +355,8 @@ MonoBehaviour:
     y: 423
     width: 525
     height: 327
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 634778
+  m_LastSelectedObjectID: -363460
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,10 +413,10 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 750
-  m_MinSize: {x: 240, y: 424}
+  m_MinSize: {x: 244, y: 424}
   m_MaxSize: {x: 4004, y: 8024}
   vertical: 1
-  controlID: 87932
+  controlID: 90748
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,8 +436,8 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 460
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -474,7 +474,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fa78faff1479faff1c79faff047efaff1e7efaffb086faff2a9afaff96bffaffc0d3faffb0e7fafffae7faffd4fafaff4c23fbfff836fbff0051fbff9e64fbff047bfbff528efbff68a2fbff86b5fbff7cddfbff4cf0fbff6205fcff5218fcffdc6dfcffd26efcffda6efcff947ffcffb27ffcffb87ffcffc87ffcffea8bfcffec8bfcff5a94fcff649bfcff78a3fcff7aa3fcfff6abfcff6cadfcff2ec2fcff74d7fcffe2d7fcff1ad8fcff1ee7fcff42f4fcffb2fcfcff48fdfcffe8a3fdffeea3fdff9c23fefffc23feff5424feffb424feff0c25feff6a25feff2626feff7e26feffde26feff3a27feff4e33fefff233fefff433feff0034feff043dfeff3a86fefff2b3feff3a0fffff3441ffff3841ffffc441ffffc641ffffc841ffffb24fffffbe4fffffca4fffff3853ffffe475ffff8489ffff9689ffffa089ffffb089ffffba89ffffc889ffffca89ffffd489ffff8290ffff9c93ffff4895ffffa298ffff5ef3ffff8cf3ffff54faffffd6fbfffff4ffffff204d0000804d0000ba4d0000264e00004c4e0000924e0000f04e00001a4f0000a2c40000c4c4000056c9000078c90000246e05004e8105004e5c070036bd07009cca0800aeaf0900
+      m_ExpandedIDs: b086faff2a9afaff96bffaffc0d3faffb0e7fafffae7faffd4fafaff4c23fbfff836fbff0051fbff9e64fbff047bfbff528efbff68a2fbff86b5fbff7cddfbff4cf0fbff6205fcff5218fcffdc6dfcffd26efcffda6efcff947ffcffb27ffcffb87ffcffc87ffcffea8bfcffec8bfcff5a94fcff649bfcff78a3fcff7aa3fcfff6abfcff6cadfcff2ec2fcff74d7fcffe2d7fcff1ad8fcff1ee7fcff42f4fcffb2fcfcff48fdfcffe8a3fdffeea3fdff9c23fefffc23feff5424feffb424feff0c25feff6a25feff2626feff7e26feffde26feff3a27feff4e33fefff233fefff433feff0034feff043dfeff3a86fefff2b3feff3a0fffff3441ffff3841ffffc441ffffc641ffffc841ffffb24fffffbe4fffffca4fffff3853ffffe475ffff8489ffff9689ffffa089ffffb089ffffba89ffffc889ffffca89ffffd489ffff8290ffff9c93ffff4895ffffa298ffff5ef3ffff8cf3ffff54faffffd6fbfffff4ffffff204d0000804d0000ba4d0000264e00004c4e0000924e0000f04e00001a4f0000a2c40000c4c4000056c9000078c90000246e05004e8105004e5c070036bd07009cca0800aeaf0900
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -734,8 +734,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 750
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -767,15 +767,10 @@ MonoBehaviour:
     width: 275
     height: 730
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: aeaf0900
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewResizer:
     m_CachedPref: -224
     m_ControlHash: -371814159

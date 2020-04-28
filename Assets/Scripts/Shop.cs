@@ -41,6 +41,9 @@ public class Shop : MonoBehaviour
     public void OpenShop()
     {
         shopMenu.SetActive(true);
+
+        GameManager.instance.SortItems(); // by sorting the items on the open, it stopped duplicating items on the first sale.
+
         OpenBuyMenu();
 
         GameManager.instance.shopActive = true; // this is parsing the true flag to the game manager to prevent the player moving while the shop menu is open.
@@ -94,6 +97,7 @@ public class Shop : MonoBehaviour
 
     private void ShowSellItems()
     {
+
         for (int i = 0; i < sellItemButtons.Length; i++)
         {
             sellItemButtons[i].buttonValue = i;
