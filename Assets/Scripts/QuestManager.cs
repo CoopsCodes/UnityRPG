@@ -20,12 +20,12 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(Input.GetKeyDown(KeyCode.Q))
-        //{
-            //Debug.Log(CheckIfComplete("Quest Test"));
-            //MarkQuestComplete("Quest Test");
-            //MarkQuestIncomplete("Fight the Demon");
-        //}
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Debug.Log(CheckIfComplete("Quest Test"));
+            MarkQuestComplete("Quest Test");
+            MarkQuestIncomplete("Fight the Demon");
+        }
     }
 
     public int GetQuestNumber(string questToFind) // matching the quest name to the right marker
@@ -58,10 +58,27 @@ public class QuestManager : MonoBehaviour
     public void MarkQuestComplete(string questToMark) // marking a quest as complete
     {
         questMarkersComplete[GetQuestNumber(questToMark)] = true;
+
+        UpdateLocalQuestObjects();
     }
 
     public void MarkQuestIncomplete(string questIncomplete) // if a quest needs to marked as incomplete
     {
         questMarkersComplete[GetQuestNumber(questIncomplete)] = false;
+
+        UpdateLocalQuestObjects();
+    }
+
+    public void UpdateLocalQuestObjects()
+    {
+        QuestObjectActivator[] questObjects = FindObjectsOfType<QuestObjectActivator>(); // locates all the Quest objects in the scene
+
+        if (questObjects.Length > 0)
+        {
+            for(int i = 0; i < questObjects.Length; i++)
+            {
+                questObjects[i].CheckCompletion();
+            }
+        }
     }
 }

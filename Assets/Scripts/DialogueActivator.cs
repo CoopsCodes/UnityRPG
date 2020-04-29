@@ -10,6 +10,10 @@ public class DialogueActivator : MonoBehaviour
 
     public bool isPerson = true;
 
+    public bool shoudlActivateQuest;
+    public string questToMark;
+    public bool markComplete;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +26,12 @@ public class DialogueActivator : MonoBehaviour
         if(canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogueBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialogue(lines, isPerson);
+
+            DialogManager.instance.ShouldActivateQuest(questToMark, markComplete);
         }
     }
 
-    // checks if player enters the trigger area, and activated the dialogue box
+    // checks if player enters the trigger area, and activated the dialogue b ox
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
