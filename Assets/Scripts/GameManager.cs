@@ -169,6 +169,39 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("Player_Position_x", PlayerController.instance.transform.position.x);
         PlayerPrefs.SetFloat("Player_Position_y", PlayerController.instance.transform.position.y);
         PlayerPrefs.SetFloat("Player_Position_z", PlayerController.instance.transform.position.z);
+
+        // Saving Player Stats
+        for(int i = 0; i < playerStats.Length; i++)
+        {
+            if(playerStats[i].gameObject.activeInHierarchy)
+            {
+                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 0 );
+            }
+
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_level", playerStats[i].playerLevel);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentEXP", playerStats[i].currentEXP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentMP", playerStats[i].currentMP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxHP", playerStats[i].maxHP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxMP", playerStats[i].maxMP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Strength", playerStats[i].strength);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Defence", playerStats[i].defence);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_WeaponPower", playerStats[i].weaponPWR);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_ArmourPower", playerStats[i].armourPWR);
+            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedWeapon", playerStats[i].equippedWeapon);
+            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedArmour", playerStats[i].equippedArmour);
+        }
+
+        // Store Inventory Data
+        for(int i = 0; i < itemsHeld.Length; i++)
+        {
+            PlayerPrefs.SetString("InventoryItem_" + i, itemsHeld[i]);
+            PlayerPrefs.SetInt("Item_Amount_" + i, noOfItems[i]);
+        }
     }
 
     public void LoadData()
