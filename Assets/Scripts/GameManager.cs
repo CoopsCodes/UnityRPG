@@ -207,5 +207,36 @@ public class GameManager : MonoBehaviour
     public void LoadData()
     {
         PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
+
+        for(int i = 0; i < playerStats.Length; i++)
+        {
+            if(PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
+            {
+                playerStats[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                playerStats[i].gameObject.SetActive(true);
+            }
+
+            playerStats[i].playerLevel = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_level");
+            playerStats[i].currentEXP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentEXP");
+            playerStats[i].currentHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentHP");
+            playerStats[i].currentMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentMP");
+            playerStats[i].maxHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxHP");
+            playerStats[i].maxMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxMP");
+            playerStats[i].strength = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Strength");
+            playerStats[i].defence = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Defence");
+            playerStats[i].weaponPWR = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_WeaponPower");
+            playerStats[i].armourPWR = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_ArmourPower");
+            playerStats[i].equippedWeapon = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedWeapon");
+            playerStats[i].equippedArmour = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedArmour");
+        }
+
+        for (int i = 0; i < itemsHeld.Length; i++)
+        {
+            itemsHeld[i] = PlayerPrefs.GetString("InventoryItem_" + i);
+            noOfItems[i] = PlayerPrefs.GetInt("Item_Amount_" + i);
+        }
     }
 }
