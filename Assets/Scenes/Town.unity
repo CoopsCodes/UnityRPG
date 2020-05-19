@@ -16805,6 +16805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 4722847099719603445, guid: 59ee0ed8bada24451b31d366fa664dff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4722847099719603440, guid: 59ee0ed8bada24451b31d366fa664dff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21274,18 +21279,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5135196070039220283}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1354150891755191666 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6163466988157128011, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 5135196070039220283}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354150891755191663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ded6f4a4134b4c0c8ed9b723955c266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5135196070039220283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21403,36 +21396,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1354150891755191666}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SaveGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5135196070998788333, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dc0844ae3d7c4473949c86fb9ec29ad, type: 3}
 --- !u!1001 &5770641689676708238
@@ -21446,6 +21409,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770641688844584499, guid: 14b5b489213c947d7a306c98662abffd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5770641688844584497, guid: 14b5b489213c947d7a306c98662abffd,
         type: 3}

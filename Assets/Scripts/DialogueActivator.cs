@@ -31,7 +31,7 @@ public class DialogueActivator : MonoBehaviour
         }
     }
 
-    // checks if player enters the trigger area, and activated the dialogue b ox
+    // checks if player enters the trigger area, and activated the dialogue box
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
