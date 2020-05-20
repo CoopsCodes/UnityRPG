@@ -15,6 +15,10 @@ public class CameraController : MonoBehaviour
     private float halfHeight;
     private float halfWidth;
 
+    // music set to trigger on location of camera
+    public int musicToPlay;
+    private bool musicStarted;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,12 @@ public class CameraController : MonoBehaviour
         // Keep camera inside bounds.
         // Mathf is ia unity function and clamp is used to bind.
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+
+        if (!musicStarted)
+        {
+            musicStarted = true;
+            AudioManager.instance.PlayBGM(musicToPlay);
+        }
     }
 }
  

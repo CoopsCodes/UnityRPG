@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource[] sfx;
     public AudioSource[] bgm;
 
-    public AudioManager instance;
+    public static AudioManager instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +33,14 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM(int musicToPlay)
     {
-        StopMusic();
-
-        if (musicToPlay < bgm.Length)
+        if (!bgm[musicToPlay].isPlaying) // checks if music is the same between scenes and allows it to continue without starting again
         {
-            bgm[musicToPlay].Play();
+            StopMusic();
+
+            if (musicToPlay < bgm.Length)
+            {
+                bgm[musicToPlay].Play();
+            }
         }
     }
 

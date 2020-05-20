@@ -8139,6 +8139,11 @@ PrefabInstance:
       propertyPath: theMap
       value: 
       objectReference: {fileID: 117886817}
+    - target: {fileID: 5714178157507288528, guid: 1e15ceeda903d4d719897485346be060,
+        type: 3}
+      propertyPath: musicToPlay
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e15ceeda903d4d719897485346be060, type: 3}
 --- !u!1 &800533201
@@ -8364,6 +8369,14 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.6205139
       objectReference: {fileID: 0}
+    - target: {fileID: 28329776, guid: 9116784f064094765849b8f669c4ecbd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 28329776, guid: 9116784f064094765849b8f669c4ecbd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.22
+      objectReference: {fileID: 0}
     - target: {fileID: 7289198695231808192, guid: 9116784f064094765849b8f669c4ecbd,
         type: 3}
       propertyPath: areaToLoad
@@ -8373,14 +8386,6 @@ PrefabInstance:
         type: 3}
       propertyPath: areaTransitionName
       value: CountrySide-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 28329776, guid: 9116784f064094765849b8f669c4ecbd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 28329776, guid: 9116784f064094765849b8f669c4ecbd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9116784f064094765849b8f669c4ecbd, type: 3}
