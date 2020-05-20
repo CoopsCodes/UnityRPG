@@ -21410,7 +21410,7 @@ PrefabInstance:
     - target: {fileID: 2356930233023610498, guid: d5c8b410ee155476690a811943ced4c8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
         type: 3}
@@ -21500,6 +21500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163466988157128020, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6163466988157128024, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
         type: 3}
@@ -21605,6 +21610,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135196069888634499, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135196069888634499, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135196069888634499, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135196070667513767, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135196070667513767, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dc0844ae3d7c4473949c86fb9ec29ad, type: 3}
