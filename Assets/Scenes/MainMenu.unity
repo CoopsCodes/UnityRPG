@@ -898,6 +898,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152771402}
   m_CullTransparentMesh: 0
+--- !u!1001 &1403220588
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2356930233023610498, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233023610499, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233183770003, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356930233183770003, guid: d5c8b410ee155476690a811943ced4c8,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5c8b410ee155476690a811943ced4c8, type: 3}
 --- !u!1 &1560895192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newGameScene: CountrySide
   continueButton: {fileID: 227716064}
+  loadGameScene: LoadingScreen
 --- !u!1 &2054132010
 GameObject:
   m_ObjectHideFlags: 0
