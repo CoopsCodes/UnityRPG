@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f9e401a97334401a5c078c765d2bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIScreen: {fileID: 0}
+  UIScreen: {fileID: 6163466988157128020, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
+    type: 3}
   player: {fileID: 1811190088391709582, guid: 1ce85fb98632449e2b4e9d0ec2c09ea3, type: 3}
-  gameMan: {fileID: 0}
+  gameMan: {fileID: 5770641688844584499, guid: 14b5b489213c947d7a306c98662abffd, type: 3}
+  audioMan: {fileID: 2356930233023610498, guid: d5c8b410ee155476690a811943ced4c8,
+    type: 3}

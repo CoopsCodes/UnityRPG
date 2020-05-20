@@ -8203,11 +8203,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials Loader
       objectReference: {fileID: 0}
-    - target: {fileID: 898641902260554210, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 898641902260554212, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8263,18 +8258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 898641902260554211, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
-        type: 3}
-      propertyPath: UIScreen
-      value: 
-      objectReference: {fileID: 3433779125266999070, guid: 0dc0844ae3d7c4473949c86fb9ec29ad,
-        type: 3}
-    - target: {fileID: 898641902260554211, guid: 452e70f15e4a244dc93c9ce87ee8fa46,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1811190088391709582, guid: 1ce85fb98632449e2b4e9d0ec2c09ea3,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452e70f15e4a244dc93c9ce87ee8fa46, type: 3}
 --- !u!1001 &1980020382
