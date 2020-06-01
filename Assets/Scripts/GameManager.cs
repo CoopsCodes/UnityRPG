@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public CharStats[] playerStats;
 
-    public bool gameMenuOpen, fadingBetweenAreas, dialogueActive, shopActive;
+    public bool gameMenuOpen, fadingBetweenAreas, dialogueActive, shopActive, battleActive;
 
     public string[] itemsHeld;
     public int[] noOfItems;
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameMenuOpen || fadingBetweenAreas || dialogueActive || shopActive)
+        if(gameMenuOpen || fadingBetweenAreas || dialogueActive || shopActive || battleActive)
         {
             PlayerController.instance.canMove = false;
         }
