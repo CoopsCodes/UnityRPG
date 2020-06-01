@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class BattleChar : MonoBehaviour
 {
+
+    public bool isPlayer;
+    public string[] movesAvailable;
+
+    public string charName;
+    public int currentHP, maxHP, currentMP, maxMP, strength, defence, weaponPWR, armourPWR;
+    public bool hasDied;
+    
     // Start is called before the first frame update
     void Start()
     {
