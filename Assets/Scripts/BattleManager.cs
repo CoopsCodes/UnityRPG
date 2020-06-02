@@ -36,15 +36,16 @@ public class BattleManager : MonoBehaviour
     {
         if (!battleActive)
         {
-            battleActive = true;
+            battleActive = true; // setting the variable to be true
 
-            GameManager.instance.battleActive = true;
+            GameManager.instance.battleActive = true; // parsing the info through to freeze the player while in battle menu
 
+            // fixing the camera from its position back to where the visual layout is placed.
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
 
-            battleScene.SetActive(true);
+            battleScene.SetActive(true); // sets the battle scene active in Unity
 
-            AudioManager.instance.PlayBGM(0);
+            AudioManager.instance.PlayBGM(0); // changes the music in the scene to battle music
         }
     }
 }
