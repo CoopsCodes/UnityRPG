@@ -60,6 +60,16 @@ public class BattleManager : MonoBehaviour
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[j].rotation);
                             newPlayer.transform.parent = playerPositions[i];
                             activeBattlers.Add(newPlayer);
+
+                            CharStats thePlayer = GameManager.instance.playerStats[i];
+                            activeBattlers[i].currentHP = thePlayer.currentHP;
+                            activeBattlers[i].maxHP = thePlayer.maxHP;
+                            activeBattlers[i].currentMP = thePlayer.currentMP;
+                            activeBattlers[i].maxMP = thePlayer.maxMP;
+                            activeBattlers[i].strength = thePlayer.strength;
+                            activeBattlers[i].defence = thePlayer.defence;
+                            activeBattlers[i].weaponPWR = thePlayer.weaponPWR;
+                            activeBattlers[i].armourPWR = thePlayer.armourPWR;
                         }
                     }
                 }
