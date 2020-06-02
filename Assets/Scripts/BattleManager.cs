@@ -16,6 +16,8 @@ public class BattleManager : MonoBehaviour
     public BattleChar[] playerPrefabs;
     public BattleChar[] enemyPrefabs;
 
+    public List<BattleChar> activeBattlers = new List<BattleChar>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,22 @@ public class BattleManager : MonoBehaviour
             battleScene.SetActive(true); // sets the battle scene active in Unity
 
             AudioManager.instance.PlayBGM(0); // changes the music in the scene to battle music
+
+            for (int i = 0; i < playerPositions.Length; i++)
+            {
+                if (GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
+                {
+                    for (int j = 0; j < playerPrefabs.Length; j++)
+                    {
+                        if (playerPrefabs[j].charName == GameManager.instance.playerStats[i].charName)
+                        {
+                            BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[j].rotation);
+                            newPlayer.transform.parent = playerPositions[i];
+                            activeBattlers.Add(newPlayer);
+                        }
+                    }
+                }
+            }
         }
     }
 }
