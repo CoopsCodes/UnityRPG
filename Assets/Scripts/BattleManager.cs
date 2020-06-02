@@ -26,10 +26,13 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            BattleStart(new string[] { "Eyeball", "Spider" });
+        }
     }
 
-    public void startBattle(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn)
     {
         if (!battleActive)
         {
@@ -37,8 +40,11 @@ public class BattleManager : MonoBehaviour
 
             GameManager.instance.battleActive = true;
 
+            transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
+
             battleScene.SetActive(true);
+
+            AudioManager.instance.PlayBGM(0);
         }
     }
 }
- 
